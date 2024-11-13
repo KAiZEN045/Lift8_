@@ -1,14 +1,13 @@
 import React from 'react';
-import { SafeAreaView, Text, StatusBar, StyleSheet } from 'react-native';
+import { SafeAreaView, Text, StyleSheet } from 'react-native';
 
-const App: React.FC = () => {
+export default function LoginScreen() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.text}>Ready To Boom</Text>
-      <StatusBar barStyle="dark-content" />
+      <Text style={styles.text}>Login Page</Text>
     </SafeAreaView>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -20,9 +19,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 22,
     fontWeight: 'bold',
+    fontFamily: 'PoppinsBold',
     color: '#333',
-    padding: 10,
   },
 });
-
-export default App;
